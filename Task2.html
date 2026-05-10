@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About</title>
+    <style>
+      /* ===== Body ===== */
+      body {
+        background-color: #e0e7ff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      /* ===== Navbar ===== */
+      nav {
+        background-color: #e80a0a;
+        padding: 20px;
+        text-align: center;
+      }
+      nav a {
+        color: rgb(244, 233, 233);
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 20px;
+      }
+
+      nav a:hover {
+        color: #0f03f0;
+      }
+
+      /* ===== Container ===== */
+      .container {
+        width: 80%;
+        margin: 30px auto;
+      }
+
+      /* ===== Headings ===== */
+      h1 {
+        text-align: center;
+        color: #111827;
+      }
+
+      h2 {
+        color: #2563eb;
+        margin-top: 20px;
+      }
+
+      h3 {
+        color: #374151;
+      }
+
+      /* ===== Lists ===== */
+      ul,
+      ol {
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+
+      /* ===== Table ===== */
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      th {
+        background-color: #2563eb;
+        color: white;
+        padding: 10px;
+      }
+
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .form {
+        padding: 15px;
+        width: 40%;
+        min-height: 80px;
+        margin: 30px auto;
+        background-color: rgb(253, 6, 6);
+        color: azure;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #ffff03;
+        color: rgb(251, 7, 7);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.8;
+        color: #2563eb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="task1.html">Home</a>
+      <a href="Task2.html">About</a>
+      <a href="Task4.html">Projects</a>
+      <a href="Task3.html">Login</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <h1>About Me</h1>
+
+      <h2>My Skills</h2>
+      <ul>
+        <li>Building web pages</li>
+        <li>Creating software projects</li>
+      </ul>
+
+      <h2>My Subjects</h2>
+
+      <h3>Web</h3>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ol>
+
+      <h3>Programming</h3>
+      <ol>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Java</li>
+      </ol>
+      <h2>what do you wanna learn</h2>
+      <form>
+        <h4>
+          <input
+            id="web"
+            type="radio"
+            name="Building"
+            value="web"
+            onclick="toggleOptions()"
+          />
+          <label for="web">Building web pages</label><br />
+        </h4>
+
+        <div class="form">
+          <input id="html" type="checkbox" class="web" disabled />
+          <label for="html">HTML</label><br />
+
+          <input id="css" type="checkbox" class="web" disabled />
+          <label for="css">CSS</label><br />
+
+          <input id="js" type="checkbox" class="web" disabled />
+          <label for="js">JavaScript</label><br />
+        </div>
+
+        <h4>
+          <input
+            id="programing"
+            type="radio"
+            name="Building"
+            value="programing"
+            onclick="toggleOptions()"
+          />
+          <label for="programing">Building programming pages</label><br />
+        </h4>
+
+        <div class="form">
+          <input id="cc" type="checkbox" class="prog" disabled />
+          <label for="cc">C++</label><br />
+
+          <input id="python" type="checkbox" class="prog" disabled />
+          <label for="python">Python</label><br />
+
+          <input id="ja" type="checkbox" class="prog" disabled />
+          <label for="ja">Java</label><br />
+        </div>
+
+        <button type="submit">send</button>
+      </form>
+
+      <script>
+        function toggleOptions() {
+          let webSelected = document.getElementById("web").checked;
+          let progSelected = document.getElementById("programing").checked;
+
+          let webOptions = document.querySelectorAll(".web");
+          let progOptions = document.querySelectorAll(".prog");
+
+          // لو اختار ويب
+          webOptions.forEach((el) => {
+            el.disabled = !webSelected;
+            if (!webSelected) el.checked = false;
+          });
+
+          // لو اختار برمجة
+          progOptions.forEach((el) => {
+            el.disabled = !progSelected;
+            if (!progSelected) el.checked = false;
+          });
+        }
+      </script>
+      <br />
+
+      <h2>Feedback</h2>
+
+      <table>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+
+        <tr>
+          <td>Web Design</td>
+          <td>A</td>
+        </tr>
+
+        <tr>
+          <td>Programming</td>
+          <td>B+</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Languages Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(14, 203, 203);
+            color: #333;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        header {
+            background: rgb(55, 0, 255);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: blue;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Learn Web Languages</h1>
+    </header>
+
+    <section>
+        <h2>what a HTML </h2>
+        <p>HTML is the standard language for creating the structure of web pages. It defines elements like headings,
+            paragraphs, images, and links.</p>
+    </section>
+
+    <section>
+        <h2> what a CSS </h2>
+        <p>CSS is used to style and design web pages. It controls colors, fonts, layouts, and makes websites look
+            professional and attractive.</p>
+    </section>
+
+    <section>
+        <h2>what a JavaScript</h2>
+        <p>JavaScript is a programming language that adds interactivity to web pages. It can handle events, validate
+            forms, create animations, and much more.</p>
+    </section>
+
+    <button id="magicBtn">Click for Motivation</button>
+
+    <footer>
+        <p>&copy; 2026 Web Learning Project</p>
+    </footer>
+
+    <script>
+        document.getElementById("magicBtn").addEventListener("click", function () {
+            alert("🚀 Keep going Ibrahim! You are mastering HTML, CSS, and JavaScript!");
+        });
+    </script>
+</body>
+
+</html> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Celebration Web Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(-45deg, #ff4b2b, #ff416c, #4facfe, #00f2fe);
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
+        color: #fff;
+        text-align: center;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      header {
+        padding: 50px;
+        font-size: 40px;
+        font-weight: bold;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        /* 👈 ده المهم */
+        align-items: center;
+        /* يخليهم في النص */
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+        margin: 20px;
+        padding: 20px;
+        width: 250px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        animation: slideUp 1s ease-in-out;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+      }
+
+      .card h2 {
+        color: #ff4b2b;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background: #ff4b2b;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.3s;
+        margin: 30px auto;
+        display: block;
+      }
+
+      div {
+        background-color: blueviolet;
+        padding: 15px;
+      }
+
+      button:hover {
+        background: #ff1e00;
+        transform: scale(1.2);
+      }
+
+      footer {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Learn HTML & CSS</h1>
+    <p>ابدأ رحلتك في تصميم المواقع 🚀</p>
+
+    <div class="container">
+      <div class="card">
+        <h2>HTML</h2>
+        <p>Structure of the web: headings, paragraphs, images, links.</p>
+      </div>
+
+      <div class="card">
+        <h2>CSS</h2>
+        <p>Design the web: colors, layouts, fonts, animations.</p>
+      </div>
+
+      <div class="card">
+        <h2>JavaScript</h2>
+        <p>Make it dynamic: interactivity, events, effects, logic.</p>
+      </div>
+    </div>
+
+    <button id="celebrateBtn">Celebrate 🎊</button>
+
+    <footer>
+      <p>&copy; 2026 Celebration Project</p>
+    </footer>
+
+    <script>
+      // 🎊 Confetti Effect
+      document
+        .getElementById("celebrateBtn")
+        .addEventListener("click", function () {
+          for (let i = 0; i < 100; i++) {
+            let confetti = document.createElement("div");
+            confetti.innerHTML = "🥰😍";
+            confetti.style.position = "fixed";
+            confetti.style.left = Math.random() * window.innerWidth + "px";
+            confetti.style.top = Math.random() * window.innerHeight + "px";
+            confetti.style.fontSize = Math.random() * 30 + 10 + "px";
+            confetti.style.animation = "fall 3s linear forwards";
+            document.body.appendChild(confetti);
+
+            setTimeout(() => confetti.remove(), 300000);
+          }
+          alert("🔥 Welcome Engineer Ibrahim Ziada, to the private website👨‍💻");
+        });
+
+      // Falling animation
+      const style = document.createElement("style");
+      style.innerHTML = `
+        @keyframes fall {
+            from {transform: translateY(-100px); opacity: 1;}
+            to {transform: translateY(500px); opacity: 0;}
+        }
+    `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learn HTML & CSS</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .card {
+            background-color: white;
+            color: black;
+            margin: 20px auto;
+            padding: 20px;
+            width: 70%;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            color: #007BFF;
+        }
+
+        button {
+            background-color: #ff4b2b;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff1e00;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Learn HTML & CSS</h1>
+        <p>ابدأ رحلتك في تصميم المواقع 🚀</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>What is HTML?</h2>
+            <p>HTML is the structure of the website. It is used to create headings, paragraphs, images, and more.</p>
+        </div>
+
+        <div class="card">
+            <h2>What is CSS?</h2>
+            <p>CSS is used to style the website. It controls colors, layout, fonts, and design.</p>
+        </div>
+
+        <div class="card">
+            <h2>Why Learn Them?</h2>
+            <p>They are the foundation of web development. Every website you see uses HTML and CSS!</p>
+        </div>
+
+        <a href="PROJACT.html">
+            <button>Go To Next Page</button>
+        </a>
+
+    </div>
+
+</body>
+
+</html> -->

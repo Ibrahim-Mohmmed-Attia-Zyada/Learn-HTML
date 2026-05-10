@@ -1,0 +1,160 @@
+<!Doctype HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrahim Portfolio</title>
+    <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            body {
+              font-family: Arial;
+              background-color:#1e1b4b;
+            }
+            nav {
+              background-color: #e80a0a;
+              padding: 20px;
+              text-align: center;
+            }
+            nav a {
+              color: rgb(244, 233, 233);
+              text-decoration: none;
+              margin-right:30px;
+              font-size: 20px;
+
+            }
+
+            nav a:hover {
+              color: #0f03f0;
+            }
+
+            .hero {
+              display: flex;
+              justify-content: space-around;/*يوزع المسافات بينهم بشكل متساوي. */
+              align-items: center;/*يخلي العناصر في المنتصف رأسيًا. */
+              padding: 40px;
+              background-color: #e0e7ff;
+            }
+            .hero-text {
+              width: 50%;
+            }
+            .hero-text h1 {
+              font-size: 40px;
+              margin-bottom: 20px;
+            }
+
+            .hero-image img {
+              width: 300px;
+              border-radius: 60%;
+            }
+            .hero-image h2{
+              color: #312e81;
+              text-align:center;
+            }
+
+          .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* يخلي العناصر في المنتصف */
+        margin-top: 20px;
+        background-color: #dce1f4;
+      }
+
+      .social a {
+        display: block;
+        width: 350px;          /* يخليهم شكلهم موحد */
+        text-align: center;    /* النص في النص */
+        margin: 9px ;
+        text-decoration: none;
+        color: #f8eded;
+        padding: 15px;
+        border-radius: 80px;
+        font-weight:bolder;
+        transition: 0.2s;
+      }
+
+          /* ألوان المنصات */
+          .facebook { background: #4f00d9; }
+          .whatsapp { background: #19db60; }
+          .tiktok { background: #000000; }
+          .instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
+          .twitter { background: #1da1f2; }
+          .call { background: #2d3436; }
+
+          .social a:hover {
+            opacity: 0.8;
+          }
+          h2{
+            color: blue;
+          }
+          h1{
+            color: #05b8f9;
+          }
+          html{
+            scroll-behavior: smooth;
+          }
+          
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <a href="Task1.html">Home</a>
+        <a href="Task2.html">About</a>
+        <a href="Task4.html">Projects</a>
+        <a href="Task3.html">Login</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hello, I'm Ibrahim</h1>
+        <h4>I am a student who loves programming and web development💻.</h4>
+        <br /><br />
+        <hr />
+        <h2>My Skills</h2>
+        <ul>
+          <li>Building web pages 👨‍💻</li>
+          <li>Creating software projects 💻</li>
+        </ul>
+        <br /><br />
+        <hr />
+        <h2>Academic qualifications</h2>
+        <p>
+          I'm Ibrahim zyada studying at Al-Azher University <br />
+          Faculty of Engineering Artificial Intelligence
+        </p>
+        <br /><br /><br />
+        <hr>
+        <a href="index.html">main</a>
+      </div>
+
+      <div class="hero-image">
+        <h2>Engineer </h2>
+        <img src="main.png" alt="My Photo" />
+        <h2>Ibrahim Ziada </h2>
+      </div>
+    </section>
+    <nav>
+    <h2 style="color: #f4f4f4; text-align: center">Contact me</h2>
+
+    <div class="social">
+      <a href="https://www.facebook.com/share/18WqMzxPMV/" class="facebook"
+        >فيسبوك</a
+      >
+      <a href="https://wa.me/201156647533" class="whatsapp">واتساب</a>
+      <a
+        href="https://www.instagram.com/ibrahimabozyada?igsh=MWVxcGhrdTVpZnlhcQ=="
+        class="instagram"
+        >إنستجرام</a
+      >
+      <a href="#" class="call">اتصل بي</a>
+    </div>
+    <nav style="color: #f4f4f4">
+      <p style="color: #dbeafe; text-align: center">© 2026 Ibrahim Ziada</p>
+    </nav>
+  </body>
+</html>
